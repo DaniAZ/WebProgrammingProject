@@ -1,0 +1,23 @@
+label{
+    display: block;
+}
+/*p{*/
+    /*color: red;*/
+/*}*/
+input[type='checkbox']
+{
+    display: block;
+}
+#checkout{
+    background-color: red;
+    position: fixed;
+    border: 2px solid;
+    top:0px;
+    right: 0px;
+}
+#checkout button{
+    color: blue;
+}
+#userNameMargin{
+    margin-bottom: auto;
+}

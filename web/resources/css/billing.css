@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+}
+form {
+    border: .063em solid #D6D2D2;
+    width: 35em;
+    margin: 7% auto;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h3 {
+    background: #F0F0F0;
+    font-weight: 100;
+    padding: .8em;
+    text-align: left;
+}
+
+#top {
+    margin-top: 0;
+}
+
+#checkbox {
+    background: #FAF8A9;
+    width: 100%;
+    padding: .4em;
+    overflow: none;
+    text-align: left;
+}
+
+div {
+    display: inline-block;
+}
+
+label {
+    font-size: .85em;
+}
+
+input[type=text] {
+    font-size: .93em;
+    border: none;
+    border: 1px solid #D6D2D2;
+    border-radius: 3px;
+}
+
+#bottom {
+    margin-top: 0;
+}
+
+#shipping {
+    margin-bottom: 1em;
+}
+
+#shipping, #billing {
+    text-align: left;
+}
+
+.inputs {
+    margin-bottom: 1em;
+}

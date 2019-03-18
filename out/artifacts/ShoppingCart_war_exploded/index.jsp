@@ -18,237 +18,111 @@
   <!-- Custom styles for this template -->
   <link href="<c:url value='/resources/css/shop-homepage.css' />" rel="stylesheet">
   <link href="<c:url value='/resources/css/style.css' />" rel="stylesheet">
+    <link href="<c:url value='/resources/css/onlineshopping.css' />" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="<c:url value='/resources/js/implementation.js'/>"></script>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
-  <div class="container">
-    <h1 class="navbar-brand text-primary">HI ${name}${Welcome}</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+    <div class="container">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+            <ul class="nav navbar-nav">
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <!--login form-->
-      <nav class="navbar navbar-light bg-light align-content-lg-center">
-        <c:if test="${name == null}">
-          <h4 class="text-danger">${Message}</h4>
-        </c:if>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
+                 <li>
+                    <!--Waring Message-->
+                    <c:if test="${name == null}">
+                    <h4 class="text-danger">${Message}</h4>
+                    </c:if>
+                    <!--Waring Message-->
+                    <!--Welcome Message-->
+                <li><h4 class="navbar-brand text-primary loginInfo">${name}${Welcome}</h4></li>
+                <!--Welcome Message-->
+                </li>
+            </ul>
+            <%----%>
+            <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                <%--<li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i  class="fas fa-shopping-cart fa-lg"></i><button id="cart"></button></a></li>--%>
+                <form action="/checkout">
+                    <button id="checkoutBtn" type="submit"><i class="fas fa-shopping-cart"></i></button>
+                </form>
 
-        <form action="/login" method="post" id="loginForm">
-          <div class="form-row align-items-center">
-            <div class="col-auto">
-              <div class="input-group mb-2">
-                 <div class="input-group-prepend" id="userNameMargin">
-                  <div class="input-group-text">UserName</div>
+                <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
+                <li class="dropdown order-1" >
+                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right mt-2">
+                        <li class="px-3 py-2">
+                               <c:if test="${not empty name}">
+                            <form action="/login" method="post" id="loginform" class="form" role="form" hidden>
+                                </c:if>
+                                    <c:if test="${name == null}">
+                                    <form action="/login" method="post" id="loginform" class="form" role="form">
+                                        </c:if>
+                                <div class="form-group">
+                                    <input id="inlineFormInput" placeholder="Email" name="username" value="${userName}" class="form-control form-control-sm" type="text" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="passwordInput" placeholder="Password" name="password" class="form-control form-control-sm" type="password" required="">
+                                </div>
+                                <div class="form-group">
+                                    <%--<label class="form-control form-control-sm" for="autoSizingCheck">--%>
+                                    <label><input  type="checkbox" id="autoSizingCheck" name="remember">Remember me:</label>
+                                    <%--</label>--%>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <div class="form-group">
+                    <c:if test="${name == null}">
+                        <a href="/signup.jsp"><button type="submit" class="btn btn-primary btn-block"> SignUp</button></a>
+                    </c:if>
+                    <c:if test="${not empty name}">
+                        <a href="/logout"><button type="submit" class="btn btn-primary btn-block"> LogOut</button></a>
+                    </c:if>
                 </div>
-              <input type="text" class="form-control mb-2 inputForm" name="username" value="${userName}" id="inlineFormInput">
-              </div>
-            </div>
-            <div class="col-auto">
-                  <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">Password</div>
-                </div>
-                <input type="password" class="form-control inputForm" id="inlineFormInputGroup" name="password">
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="form-check mb-2">
-            <c:choose>
-             <c:when test="${not empty userName}">
-                <input class="form-check-input" type="checkbox" id="autoSizingCheck" name="remember">
-             </c:when>
-              <c:otherwise>
-                <input class="form-check-input" type="checkbox" id="autoSizingCheck" name="remember">
-              </c:otherwise>
-            </c:choose>
-                <label class="form-check-label" for="autoSizingCheck">
-                  Remember me
-                </label>
-              </div>
-            </div>
-            <div class="col-auto">
-              <c:if test="${name == null}">
-              <button type="submit" id="login" class="btn btn-primary mb-2">LogIn</button>
-                <a href="/signup.jsp"><button type="button" iclass="btn btn-primary mb-2">signup</button></a>
-              </c:if>
-             <c:if test="${not empty name}">
-               <a href="/logout"><button type="button" iclass="btn btn-primary mb-2">LogOut</button></a>
-             </c:if>
-            </div>
-          </div>
-        </form>
-      </nav>
-      <!--end of login form-->
-      <!---------------------------------------------------------->
-      <!---------------------------------------------------------->
-      <!--checkout-->
-      <div id="checkout">
-        <form action="/checkout">
-          <button id="checkoutBtn"><i class="fas fa-shopping-cart"></i></button>
-        </form>
-      </div>
+            </ul>
+
+        </div>
     </div>
-  </div>
 </nav>
+<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Forgot password</h3>
+                <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Reset your password..</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
           <!-- Page Content -->
-<div class="container">
-
-  <div class="row">
-
-    <div class="col-lg-3">
-
-      <h1 class="my-4">Shop Name</h1>
-      <div class="list-group">
-        <a href="#" class="list-group-item">Category 1</a>
-        <a href="#" class="list-group-item">Category 2</a>
-        <a href="#" class="list-group-item">Category 3</a>
-      </div>
-
-    </div>
-    <!-- /.col-lg-3 -->
-
-    <div class="col-lg-9">
-
-      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="<c:url value='resources/img/images5.jpg' />" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="<c:url value='resources/img/image3.jpg' />" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="<c:url value='resources/img/images.jpg' />" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<c:url value='resources/img/group1.jpg'/> " alt=""></a>
-            <div class="card-body Product0">
-              <h4 class="card-title">
-                <a href="#"> Add to Cart</a>
-              </h4>
-              <h5 >00.11</h5>
-              <p class="card-text" >Clothes</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4" >
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<c:url value='resources/img/group2.jpg'/> " alt=""></a>
-            <div class="card-body Product1">
-              <h4 class="card-title">
-                <a href="#">Add to Cart</a>
-              </h4>
-              <h5>00.22</h5>
-              <p class="card-text">Books</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<c:url value='resources/img/group3.jpg'/> " alt=""></a>
-            <div class="card-body Product2">
-              <h4 class="card-title">
-                <a href="#">Add to Cart</a>
-              </h4>
-              <h5>00.33</h5>
-              <p class="card-text">Chair</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<c:url value='resources/img/group4.jpg'/> " alt=""></a>
-            <div class="card-body Product3">
-              <h4 class="card-title">
-                <a href="#">Add to Cart</a>
-              </h4>
-              <h5>00.44</h5>
-              <p class="card-text">Sofa</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<c:url value='resources/img/group5.jpg'/> " alt=""></a>
-            <div class="card-body Product4">
-              <h4 class="card-title">
-                <a href="#">Add to Cart</a>
-              </h4>
-              <h5>00.66</h5>
-              <p class="card-text">car</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<c:url value='resources/img/group6.jpg'/> " alt=""></a>
-            <div class="card-body Product5">
-              <h4 class="card-title">
-                <a href="#">Add to Cart</a>
-              </h4>
-              <h5>00.77</h5>
-              <p class="card-text">T-shirt</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
-    </div>
-    <!-- /.col-lg-9 -->
-
-  </div>
-  <!-- /.row -->
-
-</div>
-<!-- /.container -->
+<jsp:include page="parts/clothescontainer.jsp" />
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -258,11 +132,11 @@
   <!-- /.container -->
 </footer>
 
-<!-- Bootstrap core JavaScript -->
-<%--<script src="<c:url value='/resources/vendor/jquery/jquery.min.js' />"></script>--%>
+
 <script src="<c:url value='/resources/vendor/jquery/jquery.min.js' />"></script>
-<script src="<c:url value='/resources/vendor/bootstrap/js/bootstrap.bundle.min.js' />"></script>
-<script src="<c:url value='/resources/js/index.js'/>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

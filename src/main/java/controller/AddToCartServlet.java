@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @WebServlet(value= "/AddToCart")
 public class AddToCartServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-   // private ProductDAO dao;
+
     ObjectMapper mapper = new ObjectMapper();
 
     public static long getSerialVersionUID() {
@@ -27,10 +27,7 @@ public class AddToCartServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
            String jsonSting = request.getParameter("product");
-        System.out.println("dopost"+ jsonSting);
-//            String productPrice=(String)request.getParameter("productPrice");
-//            String productName=(String)request.getParameter("productName");
-          Product product = mapper.readValue(jsonSting, Product.class);
+            Product product = mapper.readValue(jsonSting, Product.class);
             ShoppingCart.setUserShoppingCart(product);
             product.setProductnumber(ShoppingCart.getUserShoppingCart().size());
           PrintWriter out =response.getWriter();

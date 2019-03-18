@@ -11,11 +11,11 @@
 <head>
     <title>Welcome</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <%--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>--%>
+
         <!------ Include the above in your HEAD tag ---------->
 
-    <script src="<c:url value='/resources/js/index.js'/>"></script>
+    <script src="<c:url value='/resources/js/implementation.js'/>"></script>
 </head>
 <body>
    <h1>Hello ${name}</h1>
@@ -29,7 +29,7 @@
            </tr>
            </thead>
            <tbody>
-           <c:forEach items="${products}" var="Product">
+           <c:forEach items="${ProductList}" var="Product">
            <tr id="<c:out value='tr${Product.productnumber}'/>">
                 <td data-th="Product">
                    <div class="row">
@@ -58,7 +58,7 @@
 
                <td colspan="2" class="hidden-xs"></td>
                 <td class="hidden-xs text-center"><strong>Total ${total}</strong></td>
-               <td><a href="/billing" class="btn btn-success btn-block">Confirmation <i class="fa fa-angle-right"></i></a></td>
+               <td><a href="/billing" class="btn btn-success btn-block">Check-0ut <i class="fa fa-angle-right"></i></a></td>
            </tr>
            </tfoot>
        </table>
@@ -66,6 +66,7 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
    <script src="<c:url value='/resources/vendor/jquery/jquery.min.js' />"></script>
+   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
    <link href="<c:url value='/resources/css/main.css' />" rel="stylesheet">
    </body>
 </html>

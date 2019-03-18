@@ -6,13 +6,15 @@ public class Address {
     private String address;
     private String city;
     private String country;
+    private int phoneNumber;
 
-    public Address(String firstName, String lastName, String address, String city, String country) {
+    public Address(String firstName, String lastName, String address, String city, String country,int phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.city = city;
         this.country = country;
+        this.phoneNumber=phoneNumber;
     }
 
     public String getFirstName() {
@@ -53,5 +55,13 @@ public class Address {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

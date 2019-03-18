@@ -16,8 +16,9 @@ public class UserUtil {
 
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
-            PreparedStatement st = con.prepareStatement("select * from users where username=?");
+            PreparedStatement st = con.prepareStatement("select * from users where username=? or email=?");
             st.setString(1,user.getUsername());
+            st.setString(2,user.getEmail());
             ResultSet rs=st.executeQuery();
             if(!rs.next()){
                   // the mysql insert statement
@@ -45,7 +46,7 @@ public class UserUtil {
         }
         return false;
     }
-    public static boolean isExist(User user){
+    public static Boolean isExist(User user){
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
@@ -53,13 +54,33 @@ public class UserUtil {
             st.setString(1, user.getUsername());
             ResultSet rs = st.executeQuery();
             if(!rs.next()){
-                return false;
+                 return false;
             }
         }
         catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+          return true;
+    }
+    public static Boolean isEmailExist(String email){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
+            PreparedStatement st = con.prepareStatement("select * from users where email=?");
+            st.setString(1, email);
+            ResultSet rs = st.executeQuery();
+            if(!rs.next()){
+                 return false;
+            }
+        }
+        catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

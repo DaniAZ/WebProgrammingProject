@@ -1,11 +1,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
-<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-	<title>Login V13</title>
+	<title>Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -31,17 +30,19 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/util.css'/>">
 	<link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/main_signup.css'/>">
-	<script src="<c:url value='/resources/js/index.js'/>"></script>
+	<link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/onlineshopping.css'/>">
+	<script src="<c:url value='/resources/js/signup.js'/>"></script>
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #999999;">
 	
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="login100-more" style="background-image: url('/resources/img/bg-01.jpg');"></div>
+			<div class="login100-more" style="background-image: url('/resources/img/bg-02.jpg');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 				<form action="/signup" method="post" class="login100-form validate-form">
+					<p class="warningSingup">${Warning}</p>
 					<span class="login100-form-title p-b-59">
 						Sign Up
 					</span>
@@ -54,7 +55,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<input class="input100" id="emailSignUp" type="text" name="email" placeholder="Email addess...">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -102,6 +103,7 @@
 						<a href="/login" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Sign in
 							<i class="fa fa-long-arrow-right m-l-5"></i>
+
 						</a>
 					</div>
 				</form>

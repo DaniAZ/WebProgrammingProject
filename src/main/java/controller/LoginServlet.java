@@ -35,6 +35,7 @@ public class LoginServlet extends HttpServlet {
             ResultSet rs = stmt.executeQuery("select username,password from users where username='"+uname+"' and password='"+upass+"'");
                if(rs.next()) {
                  request.getSession().setAttribute("name",request.getParameter("username"));
+                 request.removeAttribute("Message");
                 userCookie=(String) request.getSession().getAttribute("name");
                 //adding a cookie
                 if("on".equals(request.getParameter("remember")))
@@ -53,10 +54,7 @@ public class LoginServlet extends HttpServlet {
                     userNameCookie.setPath("/");
                     response.addCookie(userNameCookie);
                 }
-                //creating a cookie named promo
-                Cookie promo=new Cookie("promo","$100");
-                promo.setMaxAge(30*24*60*60);
-                response.addCookie(promo);
+
                 //   request.getRequestDispatcher("WEB-INF/jsp/checkout.jsp").forward(request,response);
                 request.getRequestDispatcher("index.jsp").forward(request,response);
                 //  response.sendRedirect("WEB-INF/jsp/welcome.jsp");

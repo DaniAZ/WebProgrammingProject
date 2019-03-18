@@ -7,35 +7,151 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3737ff08-02ca-4094-9700-5eb45ea55843" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/ItemServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/smsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/ItemUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/commons-codec-1.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/guava-18.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/httpclient-4.5.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/httpcore-4.4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/jaxb-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/jjwt-0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/joda-time-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/slf4j-api-1.7.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/stax-api-1.0-2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/lib/twilio-7.36.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/food.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/ingridents.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/parts/IngridentContainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/parts/clothescontainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/parts/foodContainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/css/onlineshopping.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/bg-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/clothe02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/clothes01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/clothes03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/clothes04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/clothes05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/clothes06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/food/ingredients1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/food/ingredients2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/food/ingredients3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/food/ingredients4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/food/ingredients5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/food/ingredients6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ghatea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/himbasha-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/DoroKeyWat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/Home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/food4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/food5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/home1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/ingrident/ingredients7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/img/making_injera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/js/addressAndBilling.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/js/implementation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/js/signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ItemServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/smsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/ItemUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controller/ItemServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controller/smsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/util/ItemUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/food.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ingridents.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/parts/IngridentContainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/parts/clothescontainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/parts/foodContainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/onlineshopping.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/bg-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/clothe02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/clothes01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/clothes03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/clothes04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/clothes05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/clothes06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/food/ingredients1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/food/ingredients2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/food/ingredients3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/food/ingredients4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/food/ingredients5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/food/ingredients6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ghatea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/himbasha-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/DoroKeyWat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/Home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/food4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/food5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/home1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/ingrident/ingredients7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/img/making_injera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/addressAndBilling.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/implementation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HelpSupport" beforeDir="false" afterPath="$PROJECT_DIR$/../HelpSupport" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ShoppingCart_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ShoppingCart_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/AddToCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/AddToCartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/BillingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/BillingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/CheckOutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/CheckOutServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/controller/SignUpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/security/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/security/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/AddressUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/AddressUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/BillingUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/BillingUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/UserUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/classes/util/UserUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/billing.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/billing.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/confirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/confirmation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/productForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/jsp/productForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/css/main_signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/css/main_signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/resources/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ShoppingCart_war_exploded/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddToCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddToCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/BillingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/BillingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CheckOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CheckOutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/security/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/AddressUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/AddressUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/BillingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/BillingUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/UserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/UserUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/AddToCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AddToCartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/BillingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/BillingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/CheckOutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/CheckOutServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SignUpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/security/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/security/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/AddressUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/AddressUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/BillingUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/BillingUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/util/UserUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/UserUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/billing.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/billing.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/confirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/confirmation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/productForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/productForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/main_signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/main_signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,53 +165,59 @@
     <session id="766903453">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.60" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="11" />
+          <entry key="css" value="19" />
           <entry key="html" value="2" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="75" />
-          <entry key="jpg" value="5" />
-          <entry key="js" value="10" />
-          <entry key="jsp" value="25" />
-          <entry key="xml" value="8" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="132" />
+          <entry key="jpg" value="13" />
+          <entry key="js" value="26" />
+          <entry key="jsp" value="67" />
+          <entry key="vmoptions" value="1" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="11" />
+          <entry key="CSS" value="19" />
           <entry key="HTML" value="2" />
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="Image" value="5" />
-          <entry key="JAVA" value="75" />
-          <entry key="JSP" value="25" />
-          <entry key="JavaScript" value="10" />
-          <entry key="XML" value="8" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="Image" value="13" />
+          <entry key="JAVA" value="132" />
+          <entry key="JSP" value="67" />
+          <entry key="JavaScript" value="26" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="74" />
-          <entry key="java" value="4433" />
-          <entry key="js" value="2408" />
-          <entry key="jsp" value="3285" />
-          <entry key="xml" value="113" />
+          <entry key="css" value="169" />
+          <entry key="dummy" value="4" />
+          <entry key="java" value="8178" />
+          <entry key="js" value="4551" />
+          <entry key="jsp" value="5768" />
+          <entry key="vmoptions" value="4" />
+          <entry key="xml" value="117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="74" />
-          <entry key="JAVA" value="4433" />
-          <entry key="JSP" value="3285" />
-          <entry key="JavaScript" value="2408" />
-          <entry key="XML" value="113" />
+          <entry key="CSS" value="169" />
+          <entry key="JAVA" value="8178" />
+          <entry key="JSP" value="5768" />
+          <entry key="JavaScript" value="4551" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="XML" value="117" />
         </counts>
       </usages-collector>
     </session>
@@ -103,73 +225,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/ShoppingCart.java">
+        <entry file="file://$PROJECT_DIR$/web/resources/js/addressAndBilling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/Database.java">
+        <entry file="file://$PROJECT_DIR$/web/resources/js/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-115">
+              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/web/resources/js/implementation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="90" column="15" lean-forward="true" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+            <state relative-caret-position="-136">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/AddressUtil.java">
+        <entry file="file://$PROJECT_DIR$/web/parts/IngridentContainer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="41">
+              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/CheckOutServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/parts/clothescontainer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+            <state relative-caret-position="1377">
+              <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/resources/js/index.js">
+        <entry file="file://$PROJECT_DIR$/web/parts/foodContainer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/SignUpServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/food.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+            <state relative-caret-position="748">
+              <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillingServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="59" column="84" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="59" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,34 +300,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/DeleteServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/confirmation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="262">
+              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddToCartServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/productForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="259">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -215,9 +322,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -231,45 +338,62 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/resources/css/main.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/welcome.jsp" />
         <option value="$PROJECT_DIR$/web/resources/css/shop-homepage.css" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/web/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/CheckOutServlet.java" />
         <option value="$PROJECT_DIR$/web/resources/css/billing.css" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/MyServletContextListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/myServletListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/DeleteServlet.java" />
+        <option value="$PROJECT_DIR$/web/resources/js/index.js" />
         <option value="$PROJECT_DIR$/src/main/java/security/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ProductServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Item.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/productForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/model/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ItemUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ItemServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AddToCartServlet.java" />
+        <option value="$PROJECT_DIR$/web/resources/css/main_signup.css" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
+        <option value="$PROJECT_DIR$/web/resources/js/signup.js" />
+        <option value="$PROJECT_DIR$/src/main/java/util/UserUtil.java" />
+        <option value="$PROJECT_DIR$/web/signup.jsp" />
+        <option value="$PROJECT_DIR$/web/parts/nav.jsp" />
+        <option value="$PROJECT_DIR$/web/parts/container.jsp" />
+        <option value="$PROJECT_DIR$/web/food.jsp" />
+        <option value="$PROJECT_DIR$/web/ingridents.jsp" />
+        <option value="$PROJECT_DIR$/web/resources/js/addressAndBilling.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/CheckOutServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Address.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/billing.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/util/AddressUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/BillingUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/BillingServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/confirmation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/MyServletContextListener.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/util/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/myServletListener.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/productForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/DeleteServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Product.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/checkout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/model/ShoppingCart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/AddToCartServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SignUpServlet.java" />
-        <option value="$PROJECT_DIR$/web/resources/js/index.js" />
-        <option value="$PROJECT_DIR$/web/signup.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/util/UserUtil.java" />
+        <option value="$PROJECT_DIR$/web/resources/css/onlineshopping.css" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/confirmation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/BillingServlet.java" />
+        <option value="$PROJECT_DIR$/web/resources/js/addressAndBilling.js" />
+        <option value="$PROJECT_DIR$/web/parts/clothescontainer.jsp" />
+        <option value="$PROJECT_DIR$/web/parts/foodContainer.jsp" />
+        <option value="$PROJECT_DIR$/web/resources/js/implementation.js" />
+        <option value="$PROJECT_DIR$/web/parts/IngridentContainer.jsp" />
       </list>
     </option>
   </component>
@@ -287,8 +411,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="101" />
-    <option name="y" value="75" />
+    <option name="x" value="649" />
+    <option name="y" value="16" />
     <option name="width" value="1170" />
     <option name="height" value="688" />
   </component>
@@ -300,8 +424,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,23 +460,13 @@
             <path>
               <item name="ShoppingCart" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShoppingCart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShoppingCart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShoppingCart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShoppingCart" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShoppingCart" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShoppingCart" type="b2602c69:ProjectViewProjectNode" />
@@ -369,45 +481,34 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ShoppingCart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShoppingCart" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShoppingCart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShoppingCart" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552782329295" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552946220311" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WorkSpace(zip)/jakson-crud" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.1150748" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\js" />
-      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\img" />
-      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\css" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web" />
-      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\WEB-INF" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\img" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\img\ingrident" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\img\food" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="util" />
@@ -415,9 +516,11 @@
       <recent name="model" />
       <recent name="controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources" />
-      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\css" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\parts" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\img\icons" />
+      <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\js" />
       <recent name="D:\Marashi University\MUM Assignment\Wap\My WAP\WorkSpace\ShoppingCart\web\resources\img" />
     </key>
   </component>
@@ -542,36 +645,37 @@
       <updated>1552513626155</updated>
       <workItem from="1552513638586" duration="20510000" />
       <workItem from="1552576726595" duration="63684000" />
-      <workItem from="1552699655138" duration="52973000" />
+      <workItem from="1552699655138" duration="127410000" />
+      <workItem from="1552914234733" duration="22334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137167000" />
+    <option name="totallyTimeSpent" value="233938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7475149" visible="true" weight="0.21580547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6034483" visible="true" weight="0.2325228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.2524851" side_tool="true" visible="true" weight="0.21580547" />
+      <window_info id="Web" order="7" sideWeight="0.39655173" side_tool="true" weight="0.25585586" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1767594" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3453355" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924013" visible="true" weight="0.24222586" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924013" weight="0.1767594" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007599" side_tool="true" weight="0.61538464" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49924013" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -586,25 +690,25 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7544803" visible="true" weight="0.275076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6034483" visible="true" weight="0.27117118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.24551971" side_tool="true" visible="true" weight="0.275076" />
+      <window_info id="Web" order="7" sideWeight="0.39655173" side_tool="true" weight="0.25585586" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.08674304" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23243243" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3371522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -628,20 +732,44 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/DeleteServlet.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/BillingUtil.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/BillingServlet.java</url>
-          <line>16</line>
-          <properties class="controller.BillingServlet" method="doPost">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/resources/vendor/jquery/jquery.js">
+    <entry file="file://$PROJECT_DIR$/web/resources/js/main.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/ItemUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -650,258 +778,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/css/shop-homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/resources/img/images6.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/resources/img/images1.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/resources/img/images2.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/resources/img/images3.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/resources/img/images5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShoppingCart.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/css/billing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
+        <state relative-caret-position="416">
           <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/MyServletContextListener.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myServletListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/signup.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/js/map-custom.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/css/util.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/css/main_signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7669">
-          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/vendor_signup/css-hamburgers/hamburgers.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3978" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/vendor_signup/select2/select2.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/billing.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/confirmation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/checkout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding>
-            <marker date="1552769240323" expanded="true" signature="748:774" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+    <entry file="file://$PROJECT_DIR$/web/resources/css/main_signup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="412">
+          <caret line="535" selection-start-line="535" selection-end-line="535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/parts/nav.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/resources/img/group4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/group3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/group2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ingridents.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="119" column="47" selection-start-line="119" selection-start-column="47" selection-end-line="119" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/addressAndBilling.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#370#379#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/UserUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/BillingUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/AddressUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="91">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/CheckOutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DeleteServlet.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/smsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/AddressUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -910,15 +891,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/productForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/BillingUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShoppingCart.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="40" column="96" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SignUpServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        <state relative-caret-position="129">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/css/onlineshopping.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/images5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/image3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/ingrident/home1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/clothes01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/clothe02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ItemServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="71" column="46" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -927,25 +972,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="90" column="15" lean-forward="true" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+        <state relative-caret-position="177">
+          <caret line="135" selection-start-line="135" selection-end-line="135" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/ShoppingCart.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/checkout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+        <state relative-caret-position="102">
+          <caret line="60" column="79" selection-start-line="60" selection-start-column="79" selection-end-line="60" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1552928390693" expanded="true" signature="676:702" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Database.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/billing.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="823">
+          <caret line="98" column="10" lean-forward="true" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -954,18 +1006,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddToCartServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="238">
+          <caret line="29" column="72" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/js/index.js">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="238">
+          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="59" column="84" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="59" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/confirmation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/addressAndBilling.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/parts/clothescontainer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/food.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/implementation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/parts/IngridentContainer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/parts/foodContainer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -979,7 +1104,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1150748" />
                 <option value="0.5" />
               </list>
             </option>
@@ -988,11 +1113,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (ShoppingCart)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1150748" />
               </list>
             </option>
           </splitter-proportions>

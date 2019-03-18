@@ -12,10 +12,24 @@
 <head>
     <title>Title</title>
     <link href="<c:url value='/resources/css/billing.css' />" rel="stylesheet">
-    <script src="<c:url value='/resources/js/index.js'/>"></script>
+    <script src="<c:url value='/resources/js/implementation.js'/>"></script>
 </head>
 <body>
-<form action="/billing" method="post">
+<table id="tbl_products">
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Quantity</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<form enctype="multipart/form-data" action="/itemForm" method="post" id="form_id">
 
     <h3 id="top">Add Product</h3>
 
@@ -23,22 +37,30 @@
 
         <div class="firstname inputs">
             <label for="">Product Name</label><br>
-            <input type="text" name="firstName" />
+            <input type="text" name="productName" id="productName" />
         </div>
 
         <div class="lastname inputs">
             <label for="">Product Price</label><br>
-            <input type="text" name="lastName" />
+            <input type="text" name="productPrice" id="productPrice" />
         </div><br>
 
         <div class="address inputs">
             <label for="">Quantity</label><br>
-            <input type="text" name="address" />
+            <input type="text" name="quantity" id="quantity" />
+        </div>
+        <div class="category inputs">
+            <label for="">Category</label><br>
+            <select name="category" id="category">
+                <option>Food Ingrident</option>
+                <option>clothes</option>
+                <option>Traditional Goods</option>
+            </select>
         </div>
 
         <div class="city inputs">
             <label for="">Description</label><br>
-            <textarea name="Desc" />
+            <textarea name="Desc" rows="4" cols="50" id="Desc"></textarea>
         </div>
         <div class="form-group">
             <label class="col-md-4 control-label" for="image_upload">PRODUCT IMAGE</label>
@@ -47,17 +69,16 @@
             </div>
         </div>
 
-    </div>
 
-
-              <button type="submit" class="btn btn-lg btn-primary" >Submit</button>
+         <div>
+              <button type="submit" id="items_button" class="btn btn-lg btn-primary" >Submit</button>
               <button type="reset" class="btn btn-secondary btn-lg" >Canel</button>
           </div>
 
     </div>
 
 </form>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="<c:url value='/resources/vendor/jquery/jquery.min.js' />"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 

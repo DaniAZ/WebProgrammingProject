@@ -6,7 +6,7 @@
 
         <div class="col-lg-3">
 
-            <h1 class="my-4">Habasha Culture</h1>
+            <h1 class="my-4">Habasha Grocery Store</h1>
             <div class="list-group">
                 <a href="/food.jsp" class="list-group-item">Food Category</a>
                 <a href="/ingridents.jsp" class="list-group-item">Ingridents</a>
@@ -26,10 +26,10 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="<c:url value='resources/img/images5.jpg' />" alt="First slide">
+                        <img class="d-block img-fluid" src="<c:url value='resources/img/foodBackground.jpg' />" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="<c:url value='resources/img/image3.jpg' />" alt="Second slide">
+                        <img class="d-block img-fluid" src="<c:url value='resources/img/backGroundClothes.jpg' />" alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block img-fluid" src="<c:url value='resources/img/images.jpg' />" alt="Third slide">
@@ -134,8 +134,8 @@
                             <h4 class="card-title">
                                 <a href="#">Add to Cart</a>
                             </h4>
-                            <h5>14.45</h5>
-                            <p class="card-text">T-shirt</p>
+                            <h5>24.45</h5>
+                            <p class="card-text">Ga'at  is a stiff porridge ,Ga'at is the name for the dish in Tigrinya, The dish's tesmi or spiced</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>

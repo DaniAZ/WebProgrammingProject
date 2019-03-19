@@ -18,7 +18,7 @@ import com.twilio.type.PhoneNumber;
 
 @WebServlet(value = "/billing")
 public class BillingServlet extends HttpServlet {
-    public static final String ACCOUNT_SID = "AC478ad16ab36b6d9f4101a2607bdf50ee";
+    public static final String ACCOUNT_SID ="AC478ad16ab36b6d9f4101a2607bdf50ee";
     public static final String AUTH_TOKEN = "50bcb5c63fd8e66bda1dde01a8ca717f";
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext sc=this.getServletContext();
@@ -48,7 +48,7 @@ public class BillingServlet extends HttpServlet {
 
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
-        Message message = Message.creator(new PhoneNumber("+12068668459"),
+        Message message = Message.creator(new PhoneNumber(Integer.toString(phoneNumber)),
                 new PhoneNumber("+12064832406"),
                 "This is an email confirmation for product your order from habesha culture from Web Programming?").create();
 

@@ -6,7 +6,7 @@
 
         <div class="col-lg-3">
 
-            <h1 class="my-4">Habasha Grocery Store onLine</h1>
+            <h1 class="my-4">Habasha Grocery Store</h1>
             <div class="list-group">
                 <a href="/food.jsp" class="list-group-item">Food Category</a>
                 <a href="/ingridents.jsp" class="list-group-item">Ingridents</a>
@@ -26,7 +26,7 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="<c:url value='resources/img/images5.jpg' />" alt="First slide">
+                        <img class="d-block img-fluid" src="<c:url value='resources/img/backGround.jpg' />" alt="First slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block img-fluid" src="<c:url value='resources/img/himbasha-2.jpg' />" alt="Second slide">

@@ -22,7 +22,7 @@
         <!--<param-name>password</param-name>-->
         <!--<param-value>root</param-value>-->
     <!--</context-param>-->
-    <context-param>
+     <context-param>
         <param-name>support-email</param-name>
         <param-value>onlineShopping.mum.edu</param-value>
     </context-param>

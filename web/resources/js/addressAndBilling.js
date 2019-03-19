@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     //confirmation form disable if same billing and address
     $('#checkboxID').change(function () {
-        $('#shipping input').prop('disabled',true);
+         $('#shipping input').attr('disabled',this.checked)
     })
 });
 

@@ -3,29 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <!--<listener>-->
-        <!--<listener-class>myServletListener</listener-class>-->
-    <!--</listener>-->
-    <!--<context-param>-->
-        <!--<param-name>url</param-name>-->
-        <!--<param-value>jdbc:mysql://localhost:3306/</param-value>-->
-    <!--</context-param>-->
-    <!--<context-param>-->
-        <!--<param-name>database</param-name>-->
-        <!--<param-value>onlineshopping</param-value>-->
-    <!--</context-param>-->
-    <!--<context-param>-->
-        <!--<param-name>user_name</param-name>-->
-        <!--<param-value>root</param-value>-->
-    <!--</context-param>-->
-    <!--<context-param>-->
-        <!--<param-name>password</param-name>-->
-        <!--<param-value>root</param-value>-->
-    <!--</context-param>-->
+
      <context-param>
         <param-name>support-email</param-name>
         <param-value>onlineShopping.mum.edu</param-value>
     </context-param>
+    <context-param>
+        <param-name>dbURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&#038;useConfigs=maxPerformance&#038;autoReconnect=true&#038;ssl=false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbUser</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
 
 
 </web-app>

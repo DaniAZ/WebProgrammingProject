@@ -12,13 +12,11 @@ public class AddressUtil {
     }
 
 
-    public static void setAddress(Address address) {
+    public static void setAddress(Connection con,Address address) {
         try
 
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
-            Statement stmt = con.createStatement();
+             Statement stmt = con.createStatement();
             // the mysql insert statement
             String query = " insert into address (firstName,lastName,address,city,country,phoneNumber)"
                     + " values (?,?,?,?,?,?)";
@@ -35,9 +33,6 @@ public class AddressUtil {
             con.close();
         }
         catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

@@ -11,14 +11,11 @@ public class BillingUtil {
     public BillingUtil() {
     }
 
-     public static void setBilling(Address address) {
+     public static void setBilling(Connection con,Address address) {
         try
 
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
-            Statement stmt = con.createStatement();
-
+              Statement stmt = con.createStatement();
                 // the mysql insert statement
                 String query = " insert into billing (firstName,lastName,address,city,country,phoneNumber)"
                         + " values (?,?,?,?,?,?)";
@@ -36,9 +33,6 @@ public class BillingUtil {
 
         }
         catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

@@ -1,7 +1,7 @@
 package controller;
 
 import model.User;
-import util.Database;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
 
-//import static util.UserUtil.getUsers;
+
 
 
 @WebServlet(value = "/login")
@@ -25,13 +25,12 @@ public class LoginServlet extends HttpServlet {
     String userCookie;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
                getSerialVersionUID();
+        Connection con = (Connection) getServletContext().getAttribute("DBConnection");
                 String uname=(String)request.getParameter("username");
                 String upass=(String)request.getParameter("password");
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false","root","root");
-            Statement stmt = con.createStatement();
+              Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select username,password from users where username='"+uname+"' and password='"+upass+"'");
                if(rs.next()) {
                  request.getSession().setAttribute("name",request.getParameter("username"));
@@ -70,9 +69,6 @@ public class LoginServlet extends HttpServlet {
 
         }
           catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

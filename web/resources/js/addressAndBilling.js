@@ -26,7 +26,7 @@ function onsubmitItems(event) {
         type:method,
         data:data,
         success:function(response) {
-            console.log("sucess"+response)
+            //console.log("sucess"+response)
               document.location.href='/confirmation.jsp';
                     }
           })

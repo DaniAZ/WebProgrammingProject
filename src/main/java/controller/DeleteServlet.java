@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,9 +25,10 @@ public class DeleteServlet extends HttpServlet {
         return serialVersionUID;
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Connection con = (Connection) getServletContext().getAttribute("DBConnection");
               String productnumber=request.getParameter("productnumber");
             Product product = mapper.readValue(productnumber, Product.class);
-              ShoppingCart.deleteProduct(product);
+              ShoppingCart.deleteProduct(con,product);
         PrintWriter out =response.getWriter();
 
         try{

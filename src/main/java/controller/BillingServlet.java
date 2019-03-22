@@ -1,5 +1,6 @@
 package controller;
 
+import com.fasterxml.jackson.core.JsonGenerationException;
 import model.Address;
 import util.AddressUtil;
 import util.BillingUtil;
@@ -12,17 +13,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
 @WebServlet(value = "/billing")
 public class BillingServlet extends HttpServlet {
-    public static final String ACCOUNT_SID ="AC478ad16ab36b6d9f4101a2607bdf50ee";
-    public static final String AUTH_TOKEN = "50bcb5c63fd8e66bda1dde01a8ca717f";
+
+    public static final String ACCOUNT_SID =System.getenv("TWILIO_ACCOUNT_SID");
+    public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Connection con = (Connection) getServletContext().getAttribute("DBConnection");
         ServletContext sc=this.getServletContext();
         String supportemail=sc.getInitParameter("support-email");
+
         long Support_ticket_id=(long)(Math.random()*1000);
 
             String firstName=request.getParameter("firstName");
@@ -32,25 +39,24 @@ public class BillingServlet extends HttpServlet {
             String country=request.getParameter("country");
             int phoneNumber=Integer.parseInt(request.getParameter("phoneNumber"));
             Address addressBilling=new Address(firstName,lastName,address,city,country,phoneNumber);
-        BillingUtil.setBilling(addressBilling);
+        BillingUtil.setBilling(con,addressBilling);
            String checkBox=request.getParameter("checkbox");
-
-        if(!"on".equals(checkBox)){
+           if("off".equals(checkBox)){
             String firstNameShipping=request.getParameter("firstNameShipping");
             String lastNameShipping=request.getParameter("lastNameShipping");
             String addressShipping=request.getParameter("addressShipping");
             String cityShipping=request.getParameter("cityShipping");
             String countryShipping=request.getParameter("countryShipping");
             int phoneNumberHome=Integer.parseInt(request.getParameter("phoneNumberHome"));
-            AddressUtil.setAddress(new Address(firstNameShipping,lastNameShipping,addressShipping,cityShipping,countryShipping,phoneNumberHome));
+            AddressUtil.setAddress(con,new Address(firstNameShipping,lastNameShipping,addressShipping,cityShipping,countryShipping,phoneNumberHome));
 
         }
 
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-        Message message = Message.creator(new PhoneNumber(Integer.toString(phoneNumber)),
-                new PhoneNumber("+12064832406"),
-                "This is an email confirmation for product your order from habesha culture from Web Programming?").create();
+         String twiloPhone="+1"+phoneNumber;
+        Message message = Message.creator(new PhoneNumber(twiloPhone),
+                new PhoneNumber(System.getenv("TWILIO_PHONE_NUMBER")),
+            "This is an email confirmation for product your order from habesha culture from Web Programming?").create();
 
         System.out.println("from twillio"+ message.getSid());
 
@@ -72,5 +78,6 @@ public class BillingServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       request.getRequestDispatcher("/WEB-INF/jsp/billing.jsp").forward(request,response);
+
     }
 }

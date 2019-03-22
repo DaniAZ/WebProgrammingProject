@@ -5,19 +5,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public  class ShoppingCart {
-   // private HashMap userShoppingCart;
 
-    //private static ArrayList<Product> userShoppingCart;
      public ShoppingCart() {
-
-
     }
 
-    public static   ArrayList<Product> getUserShoppingCart() {
+    public static   ArrayList<Product> getUserShoppingCart(Connection con) {
         ArrayList<Product> products = new ArrayList<Product>();
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from product");
               while(rs.next()){
@@ -32,20 +28,17 @@ public  class ShoppingCart {
         }catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
 
         return products;
     }
 
-    public static void  setUserShoppingCart(Product product) {
+    public static void  setUserShoppingCart(Connection con,Product product) {
         try
 
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
             Statement stmt = con.createStatement();
             // the mysql insert statement
             String query = " insert into product (productName, productPrice)"
@@ -56,23 +49,20 @@ public  class ShoppingCart {
             preparedStmt.setString (2, product.getProductPrice());
             preparedStmt.execute();
 
-            con.close();
+
         }
         catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
     }
-    public static void deleteProduct(Product product){
+    public static void deleteProduct(Connection con,Product product){
         try
 
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
             PreparedStatement st = con.prepareStatement("DELETE FROM product WHERE product_id = ?");
             st.setInt(1,product.getProductnumber());
             st.executeUpdate();
@@ -81,12 +71,23 @@ public  class ShoppingCart {
         catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
     }
+        public static void deleteAllProduct(Connection con){
+            try
 
+            {
+//                Class.forName("com.mysql.jdbc.Driver");
+//                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineshopping?characterEncoding=latin1&useConfigs=maxPerformance&autoReconnect=true&ssl=false", "root", "root");
+               PreparedStatement st = con.prepareStatement("TRUNCATE FROM product");
+                st.executeUpdate();
+
+            }
+            catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
 
 
 }

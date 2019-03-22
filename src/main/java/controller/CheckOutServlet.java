@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 @WebServlet(value = "/checkout")
@@ -18,9 +19,9 @@ public class CheckOutServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("inside checkout");
-        request.getSession().setAttribute("ProductList", ShoppingCart.getUserShoppingCart());
-        double totals=  calculateProducts(ShoppingCart.getUserShoppingCart());
+        Connection con = (Connection) getServletContext().getAttribute("DBConnection");
+        request.getSession().setAttribute("ProductList", ShoppingCart.getUserShoppingCart(con));
+        double totals=  calculateProducts(ShoppingCart.getUserShoppingCart(con));
         request.getSession().setAttribute("total",totals);
         request.getRequestDispatcher("/WEB-INF/jsp/checkout.jsp").forward(request,response);
     }
@@ -28,7 +29,6 @@ public class CheckOutServlet extends HttpServlet {
         double total=0.0;
         for(Object product: productList ){
             Product pro=(Product)product;
-           // System.out.println(pro.getProductPrice().toString());
             double x=Double.parseDouble(pro.getProductPrice().toString());
             total+=x;
         }

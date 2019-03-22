@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -25,21 +26,21 @@ public class AddToCartServlet extends HttpServlet {
         return serialVersionUID;
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        Connection con = (Connection) getServletContext().getAttribute("DBConnection");
            String jsonSting = request.getParameter("product");
             Product product = mapper.readValue(jsonSting, Product.class);
-            ShoppingCart.setUserShoppingCart(product);
-            product.setProductnumber(ShoppingCart.getUserShoppingCart().size());
+            ShoppingCart.setUserShoppingCart(con,product);
+            product.setProductnumber(ShoppingCart.getUserShoppingCart(con).size());
           PrintWriter out =response.getWriter();
 
-          request.getSession().setAttribute("products", ShoppingCart.getUserShoppingCart());
+          request.getSession().setAttribute("products", ShoppingCart.getUserShoppingCart(con));
 
         try{
             out.print(mapper.writeValueAsString(product));
         }catch (JsonGenerationException e) {
             e.printStackTrace();
         }
-//        request.getRequestDispatcher("/index.jsp").forward(request,response);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

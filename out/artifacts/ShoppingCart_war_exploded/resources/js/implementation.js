@@ -1,5 +1,3 @@
-var count=0;
-
 function loadingFunction(){
             $('.Cart a').on('click',function (event) {
                     event.stopPropagation();
@@ -13,13 +11,13 @@ function loadingFunction(){
    $('#back').click(function () {
           window.history.go(-1);
    })
-    //confirmation form disable if same billing and address
-    $('#checkboxID').change(function () {
-        $('#shipping input').prop('disabled',true);
-    })
-    //adding items
-    // $('#items_button').on('click',onsubmitItems)
-    $('#form_id').on('submit',onsubmitItems)
+   // $('tfoot tr td #checkout_a').on('click',function () {
+   //     console.log("hjkh")
+   //     $.get('/billing',billingform,"json")
+   // })
+   //  function billingform(data) {
+   //      console.log(data)
+   //  }
  }
 
 

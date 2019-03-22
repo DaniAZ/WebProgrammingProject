@@ -8,7 +8,7 @@ function onBlurUsername() {
 }
 
 function afterBlur(data) {
-    console.log(data);
+   // console.log(data);
     if(data===true) {
         let warning = $('<p>', {
             style: "color:red",

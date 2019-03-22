@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(filterName = "LoginFilter",urlPatterns = {"/checkout","/billing","/product"},servletNames = {"LoginServlet"})
+@WebFilter(filterName = "LoginFilter",urlPatterns = {"/checkout","/product"},servletNames = {"LoginServlet"})
 public class LoginFilter implements Filter {
     public void destroy() {
     }
